@@ -74,22 +74,25 @@
     }
 
     /* --- Game Tiles --- */
-    .tile {
-      position: relative;
-      background-color: rgba(20, 20, 20, 0.85);
-      border: 2px solid #00ffe1;
-      border-radius: 16px;
-      overflow: hidden;
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-      animation: pulseGlow 3s infinite ease-in-out;
-    }
+.tile {
+  position: relative;
+  background-color: rgba(20, 20, 20, 0.85);
+  border: 2px solid #00ffe1;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  animation: pulseGlow 3s infinite ease-in-out;
+  transform-origin: center; /* Add this */
+}
 
-    .tile:hover {
-      transform: translateY(-8px);
-      background-color: rgba(25, 25, 25, 0.9);
-    }
+.tile:hover {
+  transform: scale(1.05); /* Zoom in slightly instead of moving up */
+  background-color: rgba(25, 25, 25, 0.9);
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.4); /* Optional subtle glow */
+}
+
 
     .tile img {
       width: 100%;
