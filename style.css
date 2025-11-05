@@ -145,7 +145,18 @@ footer {
   font-size: 0.8rem;
   text-align: center;
   animation: fadeIn 1s ease forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* space between logo and text */
 }
+
+.footer-logo {
+  width: 20px;      /* tiny size */
+  height: auto;
+  vertical-align: middle;
+}
+
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
